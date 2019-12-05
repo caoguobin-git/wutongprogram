@@ -1,0 +1,17 @@
+<!--pages/search/search-index.wxml-->
+<view id="search-index-container">
+  <view>
+    <input id="search-index-search-input" class="search-index-control" type="text" placeholder="请输入搜索内容" bindinput="changeKeyword" value="{{keyword}}">
+      </input>
+  </view>
+  <view>
+    <button bindtap="searchKeyword" id="search-index-search-btn" class="search-index-btn">搜索</button>
+    <button bindtap="toCoursePage" id="search-index-look-btn" class="search-index-btn">目录查询</button>
+  </view>
+  <view style="text-align:center">常用搜索</view>
+  <view class="divLine"></view>
+  <view id="hotwords-container">
+  <view class="search-index-hotword" wx:key="{{item}}" bindtap="setHotWordByTap" data-hotword="{{item}}" wx:for="{{hotwords}}">{{item}}</view>
+  </view>
+
+</view>

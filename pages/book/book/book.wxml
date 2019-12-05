@@ -1,0 +1,10 @@
+<!--pages/book/book/book.wxml-->
+
+<!-- <view class="book-list-title">{{course.courseName}}</view> -->
+
+<view id="book-list-container">
+
+<view bindtap="toBookDetailPage" data-book="{{item}}" class="book-list-book" wx:for="{{books}}" wx:key="{{item.bookId}}">
+  <text>{{item.bookName}}</text><view class="arrow"></view>
+</view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+
+
+<view id="index-container">
+  <!-- <image class='background' src="/img/background/bg1.png" mode="aspectFill"></image> -->
+  <input id="index-username-input" placeholder-style="font-size:24rpx" placeholder="请输入账号" bindinput="getUsernameInputValue"  class="index-input" type="text" confirm-type="done" value="{{username}}"></input>
+  <input id="index-password-input" placeholder-style="font-size:24rpx" placeholder="请输入密码" bindinput="getPasswordInputValue"  class="index-input" type="password" confirm-type="done" value="{{password}}"></input>
+  <button hover-class="tap-login" class="index-login-btn" bindtap="login">登录</button>
+</view>

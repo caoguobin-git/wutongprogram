@@ -1,0 +1,59 @@
+/* pages/book/searchresult/result-list.wxss */
+
+#result-list-container {
+  margin-top: 10%;
+}
+
+#result-list-title {
+  position: fixed;
+  top: 0rpx;
+  left: 40rpx;
+  width: 100%;
+  font-size: 20rpx;
+  background: white;
+}
+
+.keyword {
+  font-weight: bolder;
+}
+
+#search-in-result-img {
+  position: fixed;
+  right: 5%;
+  bottom: 4%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+#search-in-result-container {
+  position: fixed;
+  bottom: 60%;
+  width:90%;
+  text-align: center;
+  left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 20rpx;
+  background: rgba(0, 0, 0, 0.671);
+}
+
+.research-btn {
+  display: inline-block;
+  width: 20%;
+  font-size: 24rpx;
+}
+
+.research-btn.btn-confirm {
+  background: rgba(70, 200, 209, 0.726);
+  margin-left: 20%;
+}
+
+
+#research-input {
+  width: 80%;
+  height: 40rpx;
+  border-radius: 10rpx;
+  background: white;
+  margin: 30rpx auto;
+}

@@ -1,0 +1,26 @@
+<view>
+  <view class="book-title">>{{book.courseName}} -> {{book.bookName}}</view>
+  <scroll-view  class="book-paragraph"  wx:for="{{book.chapters}}" wx:for-item="chapter" wx:key="{{chapter.chapterId}}">
+    <view class="chapter-title-1">{{chapter.chapterTitle}}</view>
+    <view class="chapter-detail-container">
+      <view class="chapter-detail" wx:for="{{chapter.chapterDetails}}" wx:for-item="chapterDetail" wx:key="{{chapterDetail.chapterDetailId}}" id="{{'jump-'+chapterDetail.chapterDetailId}}">
+        <view class="chapter-title-2">{{chapterDetail.chapterDetailTitle}}</view>
+        <view  wx:for="{{chapterDetail.chapterDetailContent}}" wx:for-item="content" wx:key="{{index}}">
+          <view wx:if="{{content.type==='list'}}">
+            <view wx:for="{{content.content}}" wx:for-item="contentDetail" wx:key="{{index}}">
+              <view class="chapter-detail-li"> {{contentDetail}}</view>
+            </view>
+          </view>
+          <view wx:if="{{content.type==='p'}}">
+            <view class="chapter-detail-p">{{content.content}}</view>
+          </view>
+          <view id="aaa"  wx:if="{{content.type==='img'}}">
+            <image src="{{content.content}}"></image>
+          </view>
+          <view wx:if="{{content.type==='div'}}">111</view>
+
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

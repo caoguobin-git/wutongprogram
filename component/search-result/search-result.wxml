@@ -1,0 +1,5 @@
+<!--component/search-result/search-result.wxml-->
+<import src="/wxParse/wxParse.wxml" />
+<view bindtap="getBookDetail">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>

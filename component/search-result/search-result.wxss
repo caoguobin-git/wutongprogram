@@ -1,0 +1,48 @@
+/* component/search-result/search-result.wxss */
+.highlight-detail{
+  color: red;
+  display: inline;
+}
+
+view{
+  display: inline;
+}
+.searchListTitle,.searchListTitle2,.wxParse-li-text,.wutong-paragraph{
+  display: block;
+}
+
+.searchListTitle{
+  text-indent: 5rpx;
+  font-weight: bold;
+  font-size: 26rpx;
+}
+
+.searchListTitle2{
+  width: 98%;
+  margin: auto;
+  font-size: 24rpx;
+  padding: 5rpx;
+  border-bottom: 2rpx solid silver;
+}
+
+.wxParse-li-text,.wxParse-p,.wutong-paragraph{
+  text-indent: 1rem;
+}
+/* .wutong-paragraph{
+  text-indent: 2rem;
+} */
+
+.wutong-pic{
+  width: 60%;
+}
+
+.content-container{
+  font-size: 22rpx;
+  width: 90%;
+  margin:20rpx auto;
+  max-height: 200px;
+  display: block;
+  padding: 10rpx 15rpx;
+  overflow: hidden;
+  border-bottom: 1px solid gray;
+}

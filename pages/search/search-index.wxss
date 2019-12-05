@@ -1,0 +1,63 @@
+/* pages/search/search-index.wxss */
+page{
+  height: 100%;
+}
+#search-index-container {
+  /* margin-top: 5%; */
+  height:100%;
+  background: linear-gradient(rgba(98, 210, 218, 0.664),white 10% 80%,rgba(64, 207, 218, 0.623))
+
+}
+
+#search-index-search-input {
+  width: 80%;
+  border: 1px solid gray;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.search-index-btn {
+  display: inline-block;
+  width: 35%;
+  border-radius: 50px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  margin-top: 5%;
+}
+
+#search-index-search-btn {
+  margin-left: 5%;
+  background: rgb(236, 230, 230);
+}
+
+#search-index-look-btn {
+  margin-left: 20%;
+  background: rgb(46, 130, 226);
+  color: white;
+}
+
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 3rpx;
+}
+
+#hotwords-container {
+  text-align: center;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+}
+
+.search-index-hotword {
+  display: inline-block;
+  padding: 5rpx 30rpx;
+  margin: 0rpx 15rpx 20rpx 15rpx;
+  /* border: 1rpx solid black; */
+  background: rgba(233, 230, 230, 0.788);
+  border-radius: 50rpx;
+  font-size: 25rpx;
+}

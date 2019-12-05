@@ -1,0 +1,44 @@
+/* pages/book/book-detail/book-detail.wxss */
+
+.chapter-title-1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 26rpx;
+  overflow: hidden;
+
+}
+
+.chapter-title-2 {
+  color: rgb(30, 173, 221);
+  font-weight: bold;
+  font-size: 24rpx;
+  overflow: hidden;
+
+}
+
+.book-paragraph {
+  width: 90%;
+  margin: 10rpx auto;
+  font-size: 22rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+
+}
+
+.chapter-detail-p {
+  text-indent: 1rem;
+  overflow: hidden;
+
+}
+
+.chapter-detail-li {
+  text-indent: 1rem;
+  overflow: hidden;
+}
+
+.book-title {
+  font-size: 24rpx;
+  font-weight: bold;
+  width: 96%;
+  margin: auto;
+}

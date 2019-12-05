@@ -1,0 +1,19 @@
+<!--pages/book/searchresult/result-list.wxml-->
+
+<view>
+  <!-- <view id="result-list-title">
+    <text>搜索"<text class="keyword">{{keyword}}</text>"共找到<text class="keyword">{{result.numFound}}</text>条结果</text>
+    
+  </view> -->
+  <view id="result-list-container">
+    <search-result wx:for="{{result.results}}" wx:key="{{item.id}}" searchResult="{{item}}"></search-result>
+  </view>
+  <image wx:if="{{!showSearchBox}}" bindtap="displaySearchInResultBox" id="search-in-result-img" src="/img/background/search.png"></image>
+  <view wx:if="{{showSearchBox}}" id="search-in-result-container">
+      <text style="text-align:center;color:white">在"{{keyword}}"中检索</text>
+      <input bindinput="changeResearchWord" value="{{researchWord}}" id="research-input" placeholder="输入检索内容"></input>
+      <button bindtap="cancleResearch" class="research-btn btn-cancle">取消</button>
+      <view id="space-controller"> </view>
+      <button bindtap="rearchKeyword" class="research-btn btn-confirm">确定</button>
+  </view>
+</view>
